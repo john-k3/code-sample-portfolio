@@ -1,0 +1,242 @@
+/* CSS Document */
+
+/*@media only screen and (min-width: 1205px){*/
+
+body{
+	margin:0;
+/*	background: #201F25;*/
+}
+
+p{
+	font-family: avenir, sans-serif;
+	font-weight: 500;
+	font-size: 20px;
+	text-align: justify;
+	text-align-last: center;
+	color: #636466;
+	
+	
+	width: 90%;
+	margin: 0 auto;
+}
+
+
+button:hover{
+	opacity: 1;
+}
+	
+.wrapper{
+	margin: 0;
+	display: grid;
+	grid-template-columns: repeat(6, 1fr);
+	grid-template-rows: auto;
+	grid-template-areas: 
+		"header header header menu menu menu"
+		"grabber grabber grabber grabber grabber grabber"
+		"space1 space1 space1 space1 space1 space1"
+		"work work work work text1 text1"	
+		"space2 space2 space2 space2 space2 space2"
+		"text2 text2 note note note note"
+		"space3 space3 space3 space3 space3 space3"
+		"footer footer footer footer footer footer"
+}
+
+.header{
+	grid-area: header;
+
+	padding: 20px;
+	height: 100px;
+
+	display: inline-flex;
+	z-index: 1;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+
+}
+
+.menu{
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: space-around;
+	align-items: flex-end;
+		
+	grid-area: menu;
+		
+	width: 100%;
+	position: relative;
+	bottom: 7px;
+}
+
+.menu a, a:visited{
+	font-family: avenir, sans-serif;
+	font-weight: 700;
+	font-size: 20px;
+	text-align: center;
+	text-decoration: none;
+	color: #636466;
+}
+
+.menu a:hover{
+	
+
+	color: #f7941d;
+	font-weight: 100;
+}
+.start{
+	margin: 0 10px 0 0;
+}
+
+.item{
+	margin: 0 10px;
+}
+
+.end{
+	margin: 0 0 0 10px;
+}
+
+.header h1{
+	color: #636466;
+	font-family: avenir, sans-serif;
+
+	font-weight: 900;
+	font-size: 55px;
+	text-align: left;
+	line-height: 60px;
+		
+	margin: 0 0 0 20px;
+	height: 100px;
+
+		
+	flex-shrink: 1;
+	flex-grow: 1;
+	align-self: center;
+
+}
+
+.header img{
+	width:130px;
+}
+	
+.grabber{
+	grid-area: grabber;
+}
+
+.grabber p{
+	margin: 30px auto 0;
+}
+
+.grabber h2{
+	color: #636466;
+	font-family: avenir, sans-serif;
+
+	font-weight: 900;
+	font-size: 44px;
+	text-align:  center;
+	line-height: 50px;
+}
+
+.work{
+	grid-area: work;
+}
+
+.note{
+	grid-area: note;
+}
+
+.text1{
+	grid-area: text1;
+	text-align-last: right;
+}
+
+
+.text1 button{
+	background-color: #203f5e;
+	color: white;
+	box-shadow: 0 0 0 0 white;
+	border-radius: 0 0 0 20px;
+	padding: 10px 20px;
+	opacity: 0.6;
+	transition: 0.3s;
+	border: hidden;
+	
+	margin: 5px auto;
+	display: inline-block;
+	float: right;
+	
+	font-size: 20px;
+	font-family: avenir, sans-serif;
+	font-weight: 700;
+}
+
+.text1 p{
+	padding: 5% 0 0 0;
+}
+
+.copy{
+	text-align: center;
+}
+
+.space1{
+	grid-area: space1;
+	display: block;
+	height: 50px;
+	width: 100%;
+}
+
+.space2{
+	grid-area: space2;
+	display: block;
+	height: 60px;
+	width: 100%;
+}
+
+.space3{
+	grid-area: space3;
+	display: block;
+	height: 60px;
+	width: 100%;
+}
+
+.text2{
+	grid-area: text2;
+	text-align-last: left;
+	}
+
+.text2 p{
+	text-align: left;
+	padding: 5% 0 0 0;
+}
+
+
+.text2 button{
+	background-color: #203f5e;
+	color: white;
+	box-shadow: 0 0 0 0 white;
+	border-radius: 0 0 20px 0;
+	padding: 10px 20px;
+	opacity: 0.6;
+	transition: 0.3s;
+	border: hidden;
+	
+	margin: 5px auto;
+	display: inline-block;
+	
+	font-size: 20px;
+	font-family: avenir, sans-serif;
+	font-weight: 700;
+}
+
+.text1 button:hover, .text2 button:hover{
+	opacity:1;
+}
+
+.text1 p, .text2 p{
+	text-align: justify;
+	text-align-last: left;
+}
+
+.footer{
+	grid-area: footer;
+}
+
+/* } */
